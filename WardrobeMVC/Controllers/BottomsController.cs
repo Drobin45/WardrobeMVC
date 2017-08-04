@@ -32,6 +32,34 @@ namespace WardrobeMVC.Controllers
             {
                 return HttpNotFound();
             }
+
+            //BOTTOM PHOTOS
+
+            if (bottom.BottomName == "Blue Jeans")
+            {
+                ViewBag.BottomPhoto = "/Content/Images/BlueJeans.jpg";
+            }
+
+            if (bottom.BottomName == "Black Jeans")
+            {
+                ViewBag.BottomPhoto = "/Content/Images/BlackJeans.jpg";
+            }
+
+            if (bottom.BottomName == "Short Shorts")
+            {
+                ViewBag.BottomPhoto = "/Content/Images/ShortShorts.jpg";
+            }
+
+            if (bottom.BottomName == "Kilt")
+            {
+                ViewBag.BottomPhoto = "/Content/Images/Kilt.JPG";
+            }
+
+            if (bottom.BottomName == "Slacks")
+            {
+                ViewBag.BottomPhoto = "/Content/Images/Slacks.jpg";
+            }
+
             return View(bottom);
         }
 

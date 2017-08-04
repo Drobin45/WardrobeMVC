@@ -32,6 +32,28 @@ namespace WardrobeMVC.Controllers
             {
                 return HttpNotFound();
             }
+
+            if (sho.ShoesName == "Sneakers")
+            {
+                ViewBag.ShoePhoto = "/Content/Images/Sneakers.jpg";
+            }
+
+            if (sho.ShoesName == "Oxfords")
+            {
+                ViewBag.ShoePhoto = "/Content/Images/Oxfords.jpg";
+            }
+
+            if (sho.ShoesName == "Sandals")
+            {
+                ViewBag.ShoePhoto = "/Content/Images/Sandals.jpg";
+            }
+
+            if (sho.ShoesName == "Vibram Five Fingers")
+            {
+                ViewBag.ShoePhoto = "/Content/Images/VibramFiveFingers.jpg";
+            }
+
+
             return View(sho);
         }
 

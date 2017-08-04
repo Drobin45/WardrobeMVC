@@ -9,55 +9,21 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoriesName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoriesPhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoriesType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoriesColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoriesSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AccessoriesOccassion)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoriesName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoriesPhoto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoriesType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoriesColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoriesSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AccessoriesOccassion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AccessoriesID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AccessoriesID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AccessoriesID })
-        </td>
-    </tr>
-}
 
-</table>
+@foreach (var item in Model)
+{
+    <div class="container col-md-4">
+
+        @Html.DisplayFor(modelItem => item.AccessoriesName)
+
+        <h1>
+            <img src=@Url.Content(item.AccessoriesPhoto)>
+        </h1>
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.AccessoriesID })
+        @Html.ActionLink("Details", "Details", new { id = item.AccessoriesID })
+        @Html.ActionLink("Delete", "Delete", new { id = item.AccessoriesID })
+        </div>
+        }
+

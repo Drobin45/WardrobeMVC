@@ -32,6 +32,27 @@ namespace WardrobeMVC.Controllers
             {
                 return HttpNotFound();
             }
+            //Top PHOTOS
+            if (top.TopName == "One Shirt")
+            {
+                ViewBag.TopPhoto = "/Content/Images/OneShirt.jpg";
+            }
+
+            if (top.TopName == "Two Shirt")
+            {
+                ViewBag.TopPhoto = "/Content/Images/TwoShirt.jpg";
+            }
+
+            if (top.TopName == "Red Shirt")
+            {
+                ViewBag.TopPhoto = "/Content/Images/RedShirt.jpg";
+            }
+
+            if (top.TopName == "Blue Shirt")
+            {
+                ViewBag.TopPhoto = "/Content/Images/BlueShirt.jpg";
+            }           
+
             return View(top);
         }
 

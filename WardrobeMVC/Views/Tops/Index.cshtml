@@ -9,55 +9,24 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TopName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopOccassion)
-        </th>
-        <th></th>
-    </tr>
+        
+@foreach (var item in Model)
+{
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopPhoto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopOccassion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TopsID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TopsID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TopsID })
-        </td>
-    </tr>
-}
+    <div class="container col-md-4">
 
-</table>
+        @Html.DisplayFor(modelItem => item.TopName)
+        
+        <h1>
+        <img src=@Url.Content(item.TopPhoto)>
+        </h1>
+
+
+             @Html.ActionLink("Edit", "Edit", new { id = item.TopsID })
+             @Html.ActionLink("Details", "Details", new { id = item.TopsID })
+             @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+    </div>
+
+}    
+
+

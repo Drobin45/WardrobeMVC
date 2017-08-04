@@ -32,6 +32,26 @@ namespace WardrobeMVC.Controllers
             {
                 return HttpNotFound();
             }
+
+            if (accessory.AccessoriesName == "Necklace")
+            {
+                ViewBag.TopPhoto = "/Content/Images/Necklace.jpg";
+            }
+
+            if (accessory.AccessoriesName == "FancyHat")
+            {
+                ViewBag.TopPhoto = "/Content/Images/FancyHat.jpg";
+            }
+
+            if (accessory.AccessoriesName == "Cloak")
+            {
+                ViewBag.TopPhoto = "/Content/Images/Cloak.jpg";
+            }
+
+            if (accessory.AccessoriesName == "Scarf")
+            {
+                ViewBag.TopPhoto = "/Content/Images/Scarf.jpg";
+            }
             return View(accessory);
         }
 
