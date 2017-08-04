@@ -22,7 +22,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
 /*HOMEPAGE Carousel Styling*/
+
 div.carousel-inner {
     height: 50px;
 }
@@ -54,4 +56,44 @@ p#carFive {
 
 h4#carSix {
     text-align: center;
+}
+
+/*Tops Index*/
+
+#topImages{
+    border: double;    
+    height: 500px;
+    width: 430px;
+    margin: 30px;
+    clear: left;
+}
+
+/*Bottoms Index*/
+
+#bottomImages{
+    border: double;    
+    height: 500px;
+    width: 430px;
+    margin: 30px;
+    clear: left;
+}
+
+/*Shoes Index*/
+
+#shoesImages{
+    border: double;    
+    height: 500px;
+    width: 430px;
+    margin: 30px;
+    clear: left;
+}
+
+/*Accessories Index*/
+
+#accessoriesImages{
+    border: double;    
+    height: 500px;
+    width: 430px;
+    margin: 30px;
+    clear: left;
 }

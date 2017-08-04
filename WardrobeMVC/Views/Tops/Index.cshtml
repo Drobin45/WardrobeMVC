@@ -13,20 +13,19 @@
 @foreach (var item in Model)
 {
 
-    <div class="container col-md-4">
+    <div class="container col-md-4" id="topImages">
 
         @Html.DisplayFor(modelItem => item.TopName)
         
-        <h1>
-        <img src=@Url.Content(item.TopPhoto)>
-        </h1>
-
-
+            <h1>
+                <img src=@Url.Content(item.TopPhoto)>
+            </h1>
+                
              @Html.ActionLink("Edit", "Edit", new { id = item.TopsID })
              @Html.ActionLink("Details", "Details", new { id = item.TopsID })
              @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
     </div>
-
+   
 }    
 
 
