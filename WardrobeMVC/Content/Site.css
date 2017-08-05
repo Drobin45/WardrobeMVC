@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #A1BB26;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,11 +23,37 @@ select,
 textarea {
     max-width: 280px;
 }
+/*Navbar Styling*/
+    body > div.navbar.navbar-inverse.navbar-fixed-top{
+        background-color: #095E0F;                
+    }
+    body > div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-collapse.collapse a
+   {        
+        display: inline-block;
+        list-style: none;
+        color: white;
+        font-family: 'Sedgwick Ave', cursive;        
+    }
+    .navbar .navbar-nav{
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 
 /*HOMEPAGE Carousel Styling*/
 
+#reviews{
+    text-align: center;
+}
+#car {
+    text-align: center;
+}
 div.carousel-inner {
     height: 50px;
+    background-color: white;
 }
 
 div#carousel-example-generic {
@@ -58,6 +85,14 @@ h4#carSix {
     text-align: center;
 }
 
+/*Homepage General Design*/
+
+div.jumbotron {
+    margin-top:0px;    
+    padding: 0px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
 /*Tops Index*/
 
 #topImages{
@@ -66,6 +101,21 @@ h4#carSix {
     width: 430px;
     margin: 30px;
     clear: left;
+    background-color: white;
+    display:block;
+    max-width: 100%;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+/*Tops Details*/
+#topsDetails {    
+    border: solid;  
+    background-color: white;
 }
 
 /*Bottoms Index*/
@@ -76,6 +126,21 @@ h4#carSix {
     width: 430px;
     margin: 30px;
     clear: left;
+    background-color: white;
+    display:block;
+    max-width: 100%;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Bottoms Details*/
+
+#bottomDetails{
+    border: solid;  
+    background-color: white;  
 }
 
 /*Shoes Index*/
@@ -86,6 +151,20 @@ h4#carSix {
     width: 430px;
     margin: 30px;
     clear: left;
+    background-color: white;
+    display:block;
+    max-width: 100%;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Shoes Details*/
+#shoesDetails{
+     border: solid;  
+    background-color: white;
 }
 
 /*Accessories Index*/
@@ -96,4 +175,19 @@ h4#carSix {
     width: 430px;
     margin: 30px;
     clear: left;
+    background-color: white;
+    display:block;
+    max-width: 100%;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Accessories Details*/
+
+#accessoriesDetails {
+    border: solid;  
+    background-color: white;
 }
