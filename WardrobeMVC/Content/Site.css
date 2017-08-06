@@ -93,6 +93,19 @@ div.jumbotron {
     font-family: 'Sedgwick Ave', cursive;
 }
 
+#homeThumbs {
+    float: initial;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 333px;
+}
+
+#homeThumbs:active hover {
+    box-shadow: inset;
+}
+
 /*Tops Index*/
 
 #topImages{

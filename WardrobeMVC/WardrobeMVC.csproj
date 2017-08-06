@@ -214,6 +214,10 @@
     <Content Include="Content\Images\FancyHat.jpg" />
     <Content Include="Content\Images\Kilt.JPG" />
     <Content Include="Content\Images\Necklace.jpg" />
+    <Content Include="Content\Images\NiceAccessories.jpg" />
+    <Content Include="Content\Images\NicePants.jpg" />
+    <Content Include="Content\Images\NiceShirt.jpg" />
+    <Content Include="Content\Images\NiceShoes.jpg" />
     <Content Include="Content\Images\OneShirt.jpg" />
     <Content Include="Content\Images\Oxfords.jpg" />
     <Content Include="Content\Images\RedShirt.jpg" />
